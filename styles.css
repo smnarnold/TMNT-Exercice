@@ -2,7 +2,19 @@
 
 body { margin: 0; }
 
-.turtle { background-color: #87b741; }
+.turtle {
+  background-color: #87b741;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.turtle div{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 
 .name {
   background-color: #000;
@@ -10,6 +22,15 @@ body { margin: 0; }
   font-size: 20px;
   padding: 10px;
   text-transform: uppercase;
+  order: 1;
+}
+
+.mask{
+  order: 2;
+}
+
+.description{
+  order: 3;
 }
 
 .description,
@@ -24,3 +45,50 @@ body { margin: 0; }
 .raphael .name { color: #ef3040; }
 .michelangelo .name { color: #fcc257; }
 .donatello .name { color: #bd64a8; }
+
+@media screen and (min-width:750px){
+  .turtle{
+    align-items: stretch;
+  }
+
+  .leonardo{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .leonardo .mask, .leonardo .description{
+    width: 50%;
+  }
+
+  .turtle .mask{
+    align-items: center;
+  }
+
+  .leonardo .description{
+    justify-content: flex-start;
+  }
+
+  .raphael ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .michelangelo{
+    flex-direction: row-reverse;
+  }
+
+  .michelangelo .mask, .michelangelo .description{
+    width: 50%;
+  }
+
+  .michelangelo .description{
+    justify-content: flex-end;
+  }
+
+  .donatello ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+  }
+}
