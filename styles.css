@@ -48,7 +48,7 @@ body { margin: 0; }
 
 @media screen and (min-width:750px){
   .turtle{
-    align-items:stretch ;
+    align-items: stretch;
   }
 
   .leonardo{
