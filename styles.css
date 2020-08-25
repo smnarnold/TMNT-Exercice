@@ -24,3 +24,29 @@ body { margin: 0; }
 .raphael .name { color: #ef3040; }
 .michelangelo .name { color: #fcc257; }
 .donatello .name { color: #bd64a8; }
+
+.name, .description, .mask { 
+    display: flex;
+    justify-content: center;
+  }
+
+@media screen and (max-width: 750px) {
+  .name, .description, .mask {
+    display: flex;
+    justify-content: center;
+  } 
+
+  .name{
+    order: -1;
+  }
+
+  .mask{
+    order: 0;
+  } 
+
+  .description{
+    order: 1;
+  } 
+
+
+
