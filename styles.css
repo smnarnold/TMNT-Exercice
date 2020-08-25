@@ -2,7 +2,11 @@
 
 body { margin: 0; }
 
-.turtle { background-color: #87b741; }
+.turtle { 
+  background-color: #87b741;
+  display:flex;
+  flex-wrap:wrap;
+}
 
 .name {
   background-color: #000;
@@ -23,7 +27,25 @@ body { margin: 0; }
   
 }
 
+.raphael{
+  display:flex;
+  flex-wrap:wrap;
+   
+}
+.mask , .description{
+    display:flex;
+    width:100%;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:center; 
+}
 
+.mask{
+  order:0;
+}
+.description{
+  order:1;
+}
 
 .leonardo .mask { background-color: #65b7e7; }
 .raphael .mask { background-color: #ef3040; }
