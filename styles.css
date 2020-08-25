@@ -82,11 +82,7 @@ body { margin: 0;}
 
   .raphael ul {
     display: flex;
-  }
-  
-  .raphael li {
     justify-content: space-around;
-    width: 100%;
   }
 
 /*Jaune*/
@@ -131,10 +127,7 @@ body { margin: 0;}
 
 .donatello ul {
   display: flex;
+  justify-content: space-around;
 }
 
-.donatello li {
-  justify-content: space-around;
-  width: 100%;
-}
 }
