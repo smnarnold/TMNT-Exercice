@@ -62,11 +62,11 @@ body { margin: 0; }
     flex-direction: row;
     flex-wrap: wrap;
     width:100%;
-    height:100%;
     align-items: stretch;
    }
    .mask{ 
     justify-content: center;
+    align-items: center;
   }
   .name{ 
     justify-content: center;
@@ -75,20 +75,21 @@ body { margin: 0; }
   
   .turtle .leonardo{
     width:100%;
-    height:100%
+    display: flex;
+    
   }
   .leonardo .description { 
     width: 50%;
-    border: solid black 1px;
     display: flex;
+    order:2;
+    
     
   }
   .leonardo .mask{ 
     width: 50%;
-    height: 100%;
     justify-content: center;
-    border: solid black 1px;
-   
+    order:1;
+    
   }
   .michelangelo .description{
     width: 50%;
@@ -102,14 +103,14 @@ body { margin: 0; }
   }
   .michelangelo .mask{ 
     width: 50%;
-    height: 100%;
-   
     justify-content: center;
-    border: solid black 1px;
-   
+  }
+  .raphael .mask{
+    width:100%;
   }
   .raphael .description{
     order: 3;
+    width: 100%;
   } 
   .raphael .description ul{
     flex-direction: row;
@@ -118,8 +119,12 @@ body { margin: 0; }
     display: flex;
     
   } 
+  .donatello .mask{
+    width:100%;
+  }
   .donatello .description{ 
     order: 3;
+    width: 100%;
   }
   .donatello .description ul{
     flex-direction: row;
