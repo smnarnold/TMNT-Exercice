@@ -1,7 +1,6 @@
 * { box-sizing: border-box; }
 
 body { 
-  display: flex;
   margin: 0; }
 
 .turtle { background-color: #87b741; }
@@ -27,26 +26,73 @@ body {
 .michelangelo .name { color: #fcc257; }
 .donatello .name { color: #bd64a8; }
 
-@media screen and (max-width: 750px) {
-  body {
-    margin: 0; 
-    flex-direction: column;
-  } 
+@media screen and (max-width: 749px) {
   
   .turtle {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
-    align-items: stretch;
-
   }
 
-  .mask .name .description {
+  .description {
+    display: flex;
+    justify-content: center;
+  }
+
+  .mask  {
     order: -1;
     display: flex;
-    align-items: center;
+    justify-content: center;
   }
 
   .name {
     order: -2;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  * { box-sizing: border-box; }
+
+  .turtle { 
+    display: flex;  
+    flex-wrap: wrap;
+  }
+
+  .name {
+    width: 100%;
+    text-align: center;
+    order: -2; 
+  }
+
+  .description,
+  .mask { 
+    padding: 20px; 
+    width: 50%;
+  }
+
+  .leonardo .mask {order: -1; display: flex; align-items: center; justify-content: center;}
+  .raphael .mask {width: 100%; text-align: center; order: -1;}
+  .michelangelo .mask { display: flex; align-items: center; justify-content: center;}
+  .donatello .mask {width: 100%; text-align: center;}
+
+  .raphael .description, .donatello .description{
+    width: 100%;
+  }
+
+  .raphael .description ul{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .michelangelo .description{
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .donatello .description ul{
+    display: flex;
+    justify-content: space-around;
   }
 }
