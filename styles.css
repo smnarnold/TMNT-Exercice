@@ -108,7 +108,25 @@ body { margin: 0; }
     order:0;
   }
 
-
+  .donatello{
+    display:flex;
+    flex-wrap:wrap;
+    
+    
+  }
+  .donatello .mask , .donatello .description{
+      display:flex;
+      width:100%;
+      flex-wrap:wrap;
+      justify-content:center;
+      align-items:center; 
+  }
+  .donatello ul{
+    display:flex;
+    width:100%;
+    justify-content:space-between;
+  }
+  
 
 }
 
