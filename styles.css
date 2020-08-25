@@ -10,10 +10,20 @@ body { margin: 0; }
   font-size: 20px;
   padding: 10px;
   text-transform: uppercase;
+  display:flex;
+  justify-content:center;
+  width:100%;
 }
 
 .description,
-.mask { padding: 20px; }
+.mask { padding: 20px; 
+  display:flex;
+  justify-content:center;
+  
+  
+}
+
+
 
 .leonardo .mask { background-color: #65b7e7; }
 .raphael .mask { background-color: #ef3040; }
@@ -24,3 +34,38 @@ body { margin: 0; }
 .raphael .name { color: #ef3040; }
 .michelangelo .name { color: #fcc257; }
 .donatello .name { color: #bd64a8; }
+
+@media screen and (min-width: 750px){
+  .name{
+    width:100%;
+
+  }
+  .leonardo{
+    display:flex;
+    flex-wrap:wrap;
+  }
+  .leonardo .mask , .leonardo .description{
+    display:flex;
+    width:50%;
+    flex-wrap:nowrap;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column-reverse;
+  }
+}
+
+.raphael{
+  display:flex;
+  flex-wrap:wrap;
+  
+}
+.raphael .mask , .raphael .description{
+    display:flex;
+    width:100%;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:center;
+    
+    
+}
+
