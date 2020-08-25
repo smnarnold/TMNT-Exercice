@@ -1,16 +1,32 @@
 * { box-sizing: border-box; }
 
 body { margin: 0; }
-
-.turtle { background-color: #87b741; }
-
-.name {
-  background-color: #000;
-  color: #fff;
-  font-size: 20px;
-  padding: 10px;
-  text-transform: uppercase;
+/*modifié----------------------------*/
+.turtle {
+	background-color: #87b741;
+	display: flex;
+	flex-direction: column;
 }
+.turtle>* {
+	display: flex;
+	justify-content: center;
+}
+/*/modifié---------------------------*/
+
+/*modifié----------------------------*/
+.name {
+	background-color: #000;
+	color: #fff;
+	font-size: 20px;
+	padding: 10px;
+	text-transform: uppercase;
+	order: -2;
+}
+.mask {
+	padding: 20px;
+	order: -1;
+}
+/*/modifié---------------------------*/
 
 .description,
 .mask { padding: 20px; }
@@ -24,3 +40,14 @@ body { margin: 0; }
 .raphael .name { color: #ef3040; }
 .michelangelo .name { color: #fcc257; }
 .donatello .name { color: #bd64a8; }
+
+/*---------------------------------------------*/
+@media only screen and (min-width: 751px) {
+	.turtle {flex-flow: row wrap}
+	.turtle>* {flex-basis: 100%}
+	.leonardo .mask, .leonardo .description, .michelangelo .mask, .michelangelo .description {
+		flex-basis: 50%;
+		align-items: center;
+	}
+}
+/*-------------------------*/
