@@ -67,13 +67,16 @@ body { margin: 0;}
 
   .raphael .mask {
     width: 100%;
+    order: 3;
   }
   .raphael .name {
     width: 100%;
     text-align: center;
+    order: 2;
   }
   .raphael .description {
     justify-content: space-between;
+    order: 4;
   }
 
 /*Jaune*/
