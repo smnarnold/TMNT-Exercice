@@ -58,47 +58,116 @@ body { margin: 0; }
 
 @media screen and (min-width: 750px) {
   
+  .turtle{
+    display:flex;
+    flex-wrap:wrap;
+  }
+
+  .turtle .mask {
+    align-items:center;
+  }
+
   .name {
    display:flex;
    justify-content: center;
- } 
+   width:100%;
+ }
 
- /*Raphael et Donatello*/
+ /*Raphael*/
+.turtle.raphael {
+  display:flex;
+  flex-direction:column;
+} 
+
+.turtle.raphael .name{
+  order:-1;
+} 
+
+.turtle.raphael .mask{
+  order:0;
+} 
+
+.turtle.raphael .description{
+  order:1;
+} 
+
+ /*Donatello*/
+ .turtle.donatello {
+  display:flex;
+  flex-direction:column;
+} 
+
+.turtle.donatello .name{
+  order:-1;
+} 
+
+.turtle.donatello .mask{
+  order:0;
+} 
+
+.turtle.donatello .description{
+  order:1;
+} 
+
+/*Raphael et Donatello*/
  .turtle.donatello .mask, .turtle.raphael .mask {
   display:flex;
   justify-content: center;
-} 
- .turtle.donatello ul, .turtle.raphael ul {
-  display:flex;
-  justify-content: space-between;
+  width:100%;
 } 
 
-/*Leonardo et MichelAngelo*/
+.turtle.donatello .mask, .turtle.raphael .mask {
+  display:flex;
+  justify-content: center;
+  width:100%;
+} 
+
+ .turtle.raphael ul  {
+  display:flex;
+  justify-content:space-between;
+  width: 100%;
+} 
+
+.turtle.donatello ul {
+  display:flex;
+  justify-content:space-between;
+  width: 80%;
+} 
+
+ 
+/*Leonardo*/
 .turtle.leonardo .mask  {
   display:flex;
-  justify-content: flex-start;
+  justify-content: center;
+  order:1;
 } 
 
 .turtle.leonardo .description {
   display:flex;
-  justify-content:flex-end ;
-} 
-
-.turtle.leonardo .description, .turtle.leonardo .mask  {
-  display:flex;
-  flex-wrap:wrap;
-  flex-direction: column;
+  justify-content:flex-start ;
+  order:2;
 } 
 
 
+/*Leonardo et MichelAngelo*/
+.turtle.leonardo .mask,  .turtle.leonardo .description, .turtle.michelangelo .mask,  .turtle.michelangelo .description  {
+  width:50%;
+}
+
+/*Michelangelo*/
 .turtle.michelangelo .mask {
   display:flex;
-  justify-content: flex-end;
+  justify-content: center;
 } 
 
 .turtle.michelangelo .description  {
   display:flex;
   justify-content:flex-start ;
+} 
+
+.turtle.michelangelo .description {
+  display:flex;
+  justify-content:flex-end ;
 } 
 
  
