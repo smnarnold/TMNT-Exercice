@@ -2,7 +2,8 @@
 
 body { margin: 0; }
 
-.turtle { background-color: #87b741; }
+.turtle { background-color: #87b741; 
+  display: flex;}
 
 .name {
   background-color: #000;
@@ -10,10 +11,12 @@ body { margin: 0; }
   font-size: 20px;
   padding: 10px;
   text-transform: uppercase;
+  display: flex;
+  
 }
 
 .description,
-.mask { padding: 20px; }
+.mask { padding: 20px; display: flex;}
 
 .leonardo .mask { background-color: #65b7e7; }
 .raphael .mask { background-color: #ef3040; }
@@ -24,3 +27,111 @@ body { margin: 0; }
 .raphael .name { color: #ef3040; }
 .michelangelo .name { color: #fcc257; }
 .donatello .name { color: #bd64a8; }
+
+@media screen and (max-width: 749px) {
+    .turtle{
+      flex-direction: column;
+     }
+
+    .mask{ 
+      justify-content: center;
+    }
+
+    .name{ 
+      justify-content: center;
+    }
+
+    .description{ 
+      justify-content: center;
+    }
+
+    .leonardo .description{ 
+      order: 3;
+    }
+    .raphael .description{ 
+      order: 3;
+    }
+    .michelangelo .description{ 
+      order: 3;
+    }
+
+  }
+
+@media screen and (min-width: 750px) {
+  .turtle{
+    flex-direction: row;
+    flex-wrap: wrap;
+    width:100%;
+    align-items: stretch;
+   }
+   .mask{ 
+    justify-content: center;
+    align-items: center;
+  }
+  .name{ 
+    justify-content: center;
+    width:100%;
+  }  
+  
+  .turtle .leonardo{
+    width:100%;
+    display: flex;
+    
+  }
+  .leonardo .description { 
+    width: 50%;
+    display: flex;
+    order:2;
+    
+    
+  }
+  .leonardo .mask{ 
+    width: 50%;
+    justify-content: center;
+    order:1;
+    
+  }
+  .michelangelo .description{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .michelangelo .description ul{
+    display: flex;
+    justify-content: center;
+    Flex-direction: column;
+  }
+  .michelangelo .mask{ 
+    width: 50%;
+    justify-content: center;
+  }
+  .raphael .mask{
+    width:100%;
+  }
+  .raphael .description{
+    order: 3;
+    width: 100%;
+  } 
+  .raphael .description ul{
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    display: flex;
+    
+  } 
+  .donatello .mask{
+    width:100%;
+  }
+  .donatello .description{ 
+    order: 3;
+    width: 100%;
+  }
+  .donatello .description ul{
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    display: flex;
+    
+  } 
+}
+
