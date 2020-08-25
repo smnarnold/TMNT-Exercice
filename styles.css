@@ -34,6 +34,7 @@ body { margin: 0; }
 
   .turtle {
     display: flex;
+    flex-direction: column;
   }
 
   .name, .description, .mask {
@@ -55,3 +56,50 @@ body { margin: 0; }
 
 } 
 
+@media screen and (min-width: 750px) {
+  
+  .name {
+   display:flex;
+   justify-content: center;
+ } 
+
+ /*Raphael et Donatello*/
+ .turtle.donatello .mask, .turtle.raphael .mask {
+  display:flex;
+  justify-content: center;
+} 
+ .turtle.donatello ul, .turtle.raphael ul {
+  display:flex;
+  justify-content: space-between;
+} 
+
+/*Leonardo et MichelAngelo*/
+.turtle.leonardo .mask  {
+  display:flex;
+  justify-content: flex-start;
+} 
+
+.turtle.leonardo .description {
+  display:flex;
+  justify-content:flex-end ;
+} 
+
+.turtle.leonardo .description, .turtle.leonardo .mask  {
+  display:flex;
+  flex-wrap:wrap;
+  flex-direction: column;
+} 
+
+
+.turtle.michelangelo .mask {
+  display:flex;
+  justify-content: flex-end;
+} 
+
+.turtle.michelangelo .description  {
+  display:flex;
+  justify-content:flex-start ;
+} 
+
+ 
+}
