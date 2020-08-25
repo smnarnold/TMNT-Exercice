@@ -7,8 +7,8 @@
 ## Flex
 Pour cet exercice, vous ne devez modifier que le CSS _(Nul besoin de modifier le HTML ou le JavaScript)_
 
-1. Lorsque votre écran est d'une largeur inférieur à 750px, afficher la mise en page simplifiée des Tortues Ninjas. https://i.imgur.com/FEisHCQ.png
-2. Lorsque votre écran est d'une largeur égal ou supérieur à 750px, afficher la mise en page élaborée des Tortues Ninjas. https://i.imgur.com/ZnuGTT4.png 
+1. Lorsque votre écran est d'une largeur inférieure à 750px, afficher la mise en page simplifiée des Tortues Ninjas. https://i.imgur.com/FEisHCQ.png
+2. Lorsque votre écran est d'une largeur égale ou supérieure à 750px, afficher la mise en page élaborée des Tortues Ninjas. https://i.imgur.com/ZnuGTT4.png 
 
 ## Git fin
 Vous pouvez effectuer autant de _commits_ et de _pushs_ que vous le désirez.
