@@ -1,6 +1,8 @@
 * { box-sizing: border-box; }
 
-body { margin: 0; }
+body { 
+  display: flex;
+  margin: 0; }
 
 .turtle { background-color: #87b741; }
 
@@ -24,3 +26,27 @@ body { margin: 0; }
 .raphael .name { color: #ef3040; }
 .michelangelo .name { color: #fcc257; }
 .donatello .name { color: #bd64a8; }
+
+@media screen and (max-width: 750px) {
+  body {
+    margin: 0; 
+    flex-direction: column;
+  } 
+  
+  .turtle {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+  }
+
+  .mask .name .description {
+    order: -1;
+    display: flex;
+    align-items: center;
+  }
+
+  .name {
+    order: -2;
+  }
+}
