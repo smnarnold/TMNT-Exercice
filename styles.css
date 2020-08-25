@@ -1,8 +1,8 @@
 * { box-sizing: border-box; }
 
-body { margin: 0; }
+body { margin: 0;}
 
-.turtle { background-color: #87b741; }
+.turtle { background-color: #87b741;  display: flex;}
 
 .name {
   background-color: #000;
@@ -24,3 +24,94 @@ body { margin: 0; }
 .raphael .name { color: #ef3040; }
 .michelangelo .name { color: #fcc257; }
 .donatello .name { color: #bd64a8; }
+
+@media screen and (max-width: 750px) {
+  .turtle {
+    flex-direction: column;
+    align-items: center;
+  }
+  .name {
+    width: 100%;
+    text-align: center;
+  }
+  .mask {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 751px) {
+  /*Bleu*/
+  .leonardo {
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+  }
+  .leonardo .name {
+    width: 100%;
+    text-align: center;
+  }
+  .leonardo .mask {
+    width: 50%;
+    justify-content: flex-start;
+  }
+  .leonardo .description {
+    width: 50%;
+  }
+
+  /*Rouge*/
+  .raphael {
+    flex-wrap: wrap;
+  }
+
+  .raphael .mask {
+    width: 100%;
+  }
+  .raphael .name {
+    width: 100%;
+    text-align: center;
+  }
+  .raphael .description {
+    justify-content: space-between;
+  }
+
+/*Jaune*/
+.michelangelo {
+  justify-content: flex-end;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.michelangelo .name {
+  width: 100%;
+  text-align: center;
+}
+
+.michelangelo .mask {
+  width: 50%;
+  justify-content: flex-end;
+}
+
+.michelangelo .description {
+  justify-content: space-between;
+}
+
+/*Mauve*/
+.donatello {
+  flex-wrap: wrap;
+}
+
+.donatello .name {
+  width: 100%;
+  text-align: center;
+  }
+
+.donatello .mask {
+  width: 100%;
+  }
+
+.donatello .description {
+  justify-content: space-between;
+  }
+}
