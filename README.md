@@ -26,4 +26,4 @@ Vous pouvez effectuer autant de _commits_ et de _pushs_ que vous le désirez.
 - GitHub: http://smnarnold.com/cours/outils/github
 - GitHub Desktop: http://smnarnold.com/cours/outils/github-desktop
 ### Flex
-http://smnarnold.com/cours/css/flex
+Donatello c'est sur.
